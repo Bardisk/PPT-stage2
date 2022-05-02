@@ -20,6 +20,8 @@ set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
+        serverthread.cpp
+        serverthread.h
         mainwindow.ui
         ${TS_FILES}
 )
