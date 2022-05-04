@@ -6,6 +6,8 @@
 #include <QWidget>
 #include <QTimer>
 
+#include "server/component.h"
+
 const int TICK = 200;
 
 class LocalServer : public QObject
@@ -13,6 +15,8 @@ class LocalServer : public QObject
     Q_OBJECT
 public:
     LocalServer(QObject *parent = nullptr);
+    QJsonObject *queryBucket;
+    GameMainMap *coreData;
 
 private slots:
     void run();

@@ -4,6 +4,7 @@
 
 LocalServer::LocalServer(QObject *parent)
     : QObject(parent)
+    , queryBucket()
     , isRunning(false)
     , tickStimulator(new QTimer(this))
 {
@@ -12,6 +13,7 @@ LocalServer::LocalServer(QObject *parent)
 
 void LocalServer::run(){
     clock_t st = clock();
+    query();
     clock_t en = clock();
     qDebug()<<"Tick elapsed(Run): "<<en-st<<" ms";
     return ;
@@ -40,6 +42,7 @@ void LocalServer::suspend(){
 
 void LocalServer::query(){
     clock_t st = clock();
+    queryBucket = coreData->toJSON();
     clock_t en = clock();
     emit queryFinished();
     qDebug()<<"Tick elapsed(Query): "<<en-st<<" ms";
@@ -49,6 +52,8 @@ void LocalServer::query(){
 void LocalServer::close(){
 
     emit changeServerStatus(tr("Closing"));
+    tickStimulator->stop();
+    delete tickStimulator;
     //tell the mainwindow it has closed
     emit changeServerStatus(tr("Closed"));
     this->deleteLater();
