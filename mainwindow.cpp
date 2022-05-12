@@ -50,7 +50,7 @@ MainWindow::MainWindow(QWidget *parent)
     exit = new QAction(tr("Exit"), this);
     exit->setShortcut(tr("Esc"));
     game->addAction(exit);
-    connect(exit, &QAction::triggered, this, &MainWindow::doExit);
+    connect(exit, &QAction::triggered, this, &MainWindow::exitGame);
 
     QMenu *effect = menuBar()->addMenu(tr("&Effect"));
 
@@ -87,20 +87,25 @@ void MainWindow::startGame(){
     qDebug()<<"Received Game Start!";
 }
 void MainWindow::exitGame(){
+    if (serverSign != -1)
+        opCloseServer();
     emit doExit();
     return ;
 }
 
 void MainWindow::opStartServer(){
-    server = new LocalServer(this);
+    if (serverSign == 1) return ;
+    server = new LocalServer();
     localServerWorker = new QThread(this);
     server->moveToThread(localServerWorker);
     connect(this, &MainWindow::doStartServer, server, &LocalServer::start);
     connect(this, &MainWindow::doCloseServer, server, &LocalServer::close);
     connect(this, &MainWindow::doSuspend, server, &LocalServer::suspend);
+    connect(this, &MainWindow::doQuickSave, server, &LocalServer::qsave);
+    connect(this, &MainWindow::doQuickLoad, server, &LocalServer::qload);
 
-    connect(server, &LocalServer::done, localServerWorker, &QThread::exit);
-
+    connect(server, &LocalServer::over, localServerWorker, &QThread::exit);
+    connect(localServerWorker, &QThread::finished, localServerWorker, &QThread::deleteLater);
     connect(server, &LocalServer::changeServerStatus, this, &MainWindow::onServerChange);
 
     localServerWorker->start();
@@ -109,11 +114,16 @@ void MainWindow::opStartServer(){
     serverSign = 1;
 }
 
+
 void MainWindow::opCloseServer(){
+    if (serverSign == -1) return ;
     emit doCloseServer();
-    localServerWorker->deleteLater();
     onClientChange("Not Connected");
+    QThread::msleep(50);
+    delete server;
+    localServerWorker->exit(0);
     serverSign = -1;
+    return ;
 }
 
 void MainWindow::opRestartServer(){
@@ -137,6 +147,8 @@ void MainWindow::onServerChange(QString neuCaption){
 
 MainWindow::~MainWindow()
 {
+    if (serverSign != -1)
+        opCloseServer();
     delete ui;
 }
 

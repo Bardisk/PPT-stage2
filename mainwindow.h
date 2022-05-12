@@ -56,7 +56,8 @@ signals:
 protected:
 
     void closeEvent(QCloseEvent *event){
-        opCloseServer();
+        if (~serverSign)
+            opCloseServer();
         QMainWindow::closeEvent(event);
         return ;
     }
@@ -81,8 +82,11 @@ private:
     int serverSign;
     LocalServer *server;
     QThread *localServerWorker;
+    void exitThread(int exitNum=-1);
 
     QPushButton *startButton;
+
+    void coreRendering();
 
     void startGame();
     void exitGame();

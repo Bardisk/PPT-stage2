@@ -17,12 +17,12 @@ public:
     LocalServer(QObject *parent = nullptr);
     QJsonObject *queryBucket;
     GameMainMap *coreData;
+    bool isRunning;
 
 private slots:
     void run();
 
 private:
-    bool isRunning;
     QTimer *tickStimulator;
 
 public slots:
@@ -30,9 +30,11 @@ public slots:
     void close();
     void suspend();
     void query();
+    int qload();
+    int qsave();
 
 signals:
-    void done(int exitNum=-1);
+    void over(int exitNum=-1);
     void queryFinished();
     void changeServerStatus(QString caption);
 };
