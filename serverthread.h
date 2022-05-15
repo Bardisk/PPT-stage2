@@ -30,12 +30,14 @@ public slots:
     void close();
     void suspend();
     void query();
+    int load();
+    int save();
     int qload();
     int qsave();
 
 signals:
     void over(int exitNum=-1);
-    void queryFinished();
+    void queryFinished(QJsonObject now);
     void changeServerStatus(QString caption);
 };
 

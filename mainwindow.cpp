@@ -5,7 +5,9 @@
 #include <QPushButton>
 
 #include "mainwindow.h"
+#include "maptdialog.h"
 #include "./ui_mainwindow.h"
+#include <QGraphicsItem>
 #include <QTime>
 
 void MainWindow::SendMessageManager::sendExit(){
@@ -56,15 +58,24 @@ MainWindow::MainWindow(QWidget *parent)
 
     QMenu *cao = menuBar()->addMenu(tr("&Configure and Advanced Options"));
 
+    maptrans = new QAction(tr("Map Translation"));
+    maptrans->setShortcut(tr("Ctrl+T"));
+    cao->addAction(maptrans);
+    connect(maptrans, &QAction::triggered, this, &MainWindow::openMaptrans);
+
     QMenu *help = menuBar()->addMenu(tr("&Help"));
 
     //    QMenu *
 //    game = new QAction(tr("&Game"))
 
+    gameSpace = new QGraphicsScene();
+    overview = new QGraphicsView(gameSpace, this);
 
-    startButton = new QPushButton(tr("Start Game"), this);
-    setCentralWidget(startButton);
-    connect(startButton, &QPushButton::pressed, this, &MainWindow::startGame);
+    setCentralWidget(overview);
+
+//    startButton = new QPushButton(tr("Start Game"), this);
+
+//    connect(startButton, &QPushButton::clicked, this, &MainWindow::startGame);
 
 
     statusBar();
@@ -74,6 +85,8 @@ MainWindow::MainWindow(QWidget *parent)
 //    sStatus->setMargin(1);
     statusBar()->addPermanentWidget(cStatus);
     statusBar()->addPermanentWidget(sStatus);
+
+
 
     //start the server thread
     opStartServer();
@@ -108,6 +121,8 @@ void MainWindow::opStartServer(){
     connect(localServerWorker, &QThread::finished, localServerWorker, &QThread::deleteLater);
     connect(server, &LocalServer::changeServerStatus, this, &MainWindow::onServerChange);
 
+    connect(server, &LocalServer::queryFinished, this, &MainWindow::advance);
+
     localServerWorker->start();
     emit doStartServer();
     onClientChange("Local Server Connected");
@@ -132,8 +147,6 @@ void MainWindow::opRestartServer(){
     return ;
 }
 
-
-
 void MainWindow::onClientChange(QString neuCaption){
     cStatus->setText(neuCaption);
     return ;
@@ -145,10 +158,33 @@ void MainWindow::onServerChange(QString neuCaption){
 }
 
 
+void MainWindow::openMaptrans(){
+    maptDialog *win = new maptDialog(this);
+    win->show();
+    return ;
+}
+
+void MainWindow::advance(QJsonObject now)
+{
+    auto tmp = now.toVariantMap();
+    GameMainMap v(&tmp);
+    gameSpace->clear();
+
+    const quint32 frlength = 40;
+    for (int i = 0; i < v.szN; i++) {
+        for (int j = 0; j < v.szM; j++) {
+            auto nowit = gameSpace->addPixmap(QPixmap(tr(":/images/mapics/fbsea")));
+            nowit->setPos(QPointF(frlength*i, frlength*j));
+        }
+    }
+
+}
+
 MainWindow::~MainWindow()
 {
     if (serverSign != -1)
         opCloseServer();
     delete ui;
+    delete gameSpace;
 }
 

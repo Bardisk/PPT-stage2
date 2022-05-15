@@ -7,6 +7,8 @@
 #include <QDebug>
 #include <QTimer>
 #include <QThread>
+#include <QGraphicsView>
+#include <QGraphicsScene>
 
 #include "serverthread.h"
 
@@ -75,6 +77,7 @@ private:
     lpQAction save, load, quickSave, quickLoad, pause, restart, quit, exit;
     lpQAction volumeup, volumedown, silence, configure, restartServer, advancedOptions;
     lpQAction document, about;
+    lpQAction maptrans;
 
 
     QLabel *cStatus, *sStatus;
@@ -85,6 +88,9 @@ private:
     void exitThread(int exitNum=-1);
 
     QPushButton *startButton;
+
+    QGraphicsView *overview;
+    QGraphicsScene *gameSpace;
 
     void coreRendering();
 
@@ -99,6 +105,9 @@ private:
     void opStartServer();
     void opCloseServer();
 
+    void openMaptrans();
+
+    void advance(QJsonObject now);
 };
 
 class MainWindow::SendMessageManager : public QObject

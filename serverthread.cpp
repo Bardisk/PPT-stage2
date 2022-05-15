@@ -15,6 +15,7 @@ LocalServer::LocalServer(QObject *parent)
 void LocalServer::run(){
     if (!isRunning) return ;
     clock_t st = clock();
+
     query();
     clock_t en = clock();
     qDebug()<<"Tick elapsed(Run): "<<en-st<<" ms";
@@ -49,7 +50,7 @@ void LocalServer::query(){
     clock_t st = clock();
     queryBucket = coreData->toJSON();
     clock_t en = clock();
-    emit queryFinished();
+    emit queryFinished(*queryBucket);
     qDebug()<<"Tick elapsed(Query): "<<en-st<<" ms";
     return ;
 }
@@ -66,6 +67,13 @@ void LocalServer::close(){
     return ;
 }
 
+int LocalServer::load(){
+    return 0;
+}
+int LocalServer::save(){
+    return 0;
+}
+
 int LocalServer::qload()
 {
     QFile qsavdata("savs/savq.json");
@@ -77,7 +85,7 @@ int LocalServer::qload()
     qsavdata.close();
     QVariant tmp = QJsonDocument::fromJson(readStuff).toVariant();
     QVariantMap tmpMap = tmp.toMap();
-//    coreData->load(&tmpMap);
+    coreData->load(&tmpMap);
     return 0;
 }
 

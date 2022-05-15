@@ -147,11 +147,15 @@ public:
 };
 
 class GameMainMap{
-    int szN, szM;
 public:
+    int szN, szM;
     QList <MapNode> map;
     QList <Player> players;
+    int size();
     int getnum(int _x, int _y);
+    int geti(int _num);
+    int getj(int _num);
+    void erasePlayers();
     GameMainMap();
     GameMainMap(int _N, int _M);
     GameMainMap(QVariantMap *fromVariant);

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images"/>
+    <qresource prefix="/images/mapics">
+        <file alias="fbsea">floor_block_sea_style.png</file>
+    </qresource>
+</RCC>

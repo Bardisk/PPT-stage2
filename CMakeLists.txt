@@ -22,10 +22,14 @@ set(PROJECT_SOURCES
         mainwindow.h
         serverthread.cpp
         serverthread.h
+        maptdialog.cpp
+        maptdialog.h
 #        server/map.cpp
 #        server/map.h
         server/component.cpp
         server/component.h
+        stage1/base.h
+        stage1/color.h
 #        server/maingame.cpp
 #        server/maingame.h
 #        server/base.cpp
@@ -33,6 +37,7 @@ set(PROJECT_SOURCES
 #        server/ai.cpp
 #        server/ai.h
         mainwindow.ui
+        pptresources.qrc
         ${TS_FILES}
 )
 

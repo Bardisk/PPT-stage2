@@ -207,6 +207,11 @@ Player::~Player()
 MapNode::MapNode()
 {}
 
+MapNode::MapNode(QVariantMap *from)
+    : resideEntities((*from)["rsEntities"].toList())
+    , movingtoEntities((*from)["mtEntities"].toList())
+{}
+
 QVariantMap* MapNode::toVariant()
 {
     QVariantMap* current = new QVariantMap();
@@ -267,4 +272,58 @@ QJsonObject* GameMainMap::toJSON()
     QJsonObject *currentJs = new QJsonObject(QJsonObject::fromVariantMap(*current));
     delete current;
     return currentJs;
+}
+
+int GameMainMap::geti(int _num)
+{
+    return _num / szM;
+}
+int GameMainMap::getj(int _num)
+{
+    return _num % szM;
+}
+
+GameMainMap::GameMainMap(QVariantMap *fromVariant)
+    : szN((*fromVariant)["N"].toInt())
+    , szM((*fromVariant)["M"].toInt())
+{
+    auto tmpmap = (*fromVariant)["mapDt"].toList();
+    auto tmppla = (*fromVariant)["plaDt"].toList();
+    foreach(QVariant i, tmpmap)
+    {
+        auto tmptmp = i.toMap();
+        map.push_back(MapNode(&tmptmp));
+    }
+    foreach(QVariant i, tmppla)
+    {
+        auto tmptmp = i.toMap();
+        players.push_back(Player(&tmptmp));
+    }
+}
+
+void GameMainMap::load(QVariantMap *fromVariant)
+{
+    szN = (*fromVariant)["N"].toInt();
+    szM = (*fromVariant)["M"].toInt();
+    qDebug() << szN;
+    qDebug() << szM;
+    map.clear();
+    players.clear();
+    auto tmpmap = (*fromVariant)["mapDt"].toList();
+    auto tmppla = (*fromVariant)["plaDt"].toList();
+    foreach(QVariant i, tmpmap)
+    {
+        auto tmptmp = i.toMap();
+        map.push_back(MapNode(&tmptmp));
+    }
+    foreach(QVariant i, tmppla)
+    {
+        auto tmptmp = i.toMap();
+        players.push_back(Player(&tmptmp));
+    }
+    return ;
+}
+
+int GameMainMap::size(){
+    return szN * szM;
 }
