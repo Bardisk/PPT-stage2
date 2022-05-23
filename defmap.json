@@ -1,0 +1,2906 @@
+{
+    "M": 17,
+    "N": 15,
+    "mapDt": [
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 1,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 4,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 6,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 8,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 10,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 12,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 15,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 0,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 1,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 8,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 9,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 1,
+                    "posy": 14,
+                    "toughness": 0,
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 1,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 8,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 2,
+                    "posy": 15,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 2,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 1,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 3,
+                    "posy": 1,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 2,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 4,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 8,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 12,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 15,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 3,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 4,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 4,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 4,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 4,
+                    "posy": 4,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 6,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 4,
+                    "posy": 6,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 7,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 9,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 4,
+                    "posy": 9,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 11,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 4,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 15,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 4,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 6,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 7,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 10,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 15,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 5,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 4,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 6,
+                    "posy": 4,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 5,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 8,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 11,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 15,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 6,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 4,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 8,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 10,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 7,
+                    "posy": 10,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 12,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 7,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 5,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 8,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 11,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 15,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 8,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 1,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 6,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 8,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 9,
+                    "posy": 8,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 10,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 9,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 10,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 10,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 5,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 6,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 10,
+                    "posy": 6,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 7,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 9,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 11,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 10,
+                    "posy": 11,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 10,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 10,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 1,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 2,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 4,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 12,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 15,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 11,
+                    "posy": 15,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 11,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 12,
+                    "posy": 1,
+                    "toughness": 0,
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 12,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 12,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 12,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 12,
+                    "posy": 12,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 12,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 13,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 13,
+                    "posy": 2,
+                    "toughness": 0,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 3,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 4,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 6,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 8,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 13,
+                    "posy": 8,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 9,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 10,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 13,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 13,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 1,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 2,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 3,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 4,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 5,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 6,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 7,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 8,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 9,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 10,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 11,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 12,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 13,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 14,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 15,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 14,
+                    "posy": 16,
+                    "toughness": 1061109567
+                }
+            ]
+        }
+    ],
+    "plaDt": [
+    ]
+}
