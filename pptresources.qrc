@@ -2,5 +2,85 @@
     <qresource prefix="/images"/>
     <qresource prefix="/images/mapics">
         <file alias="fbsea">floor_block_sea_style.png</file>
+        <file alias="swsea">soft_wall_sea_style.png</file>
+        <file alias="hdsea">hard_wall_sea_style.png</file>
+    </qresource>
+    <qresource prefix="/buttons">
+        <file alias="stbt">start_button.png</file>
+    </qresource>
+    <qresource prefix="/dao">
+        <file>unit_dao/unit_dao1.png</file>
+        <file>unit_dao/unit_dao2.png</file>
+        <file alias="up">unit_dao/unit_dao3.png</file>
+        <file alias="down">unit_dao/unit_dao4.png</file>
+        <file alias="right">unit_dao/unit_dao5.png</file>
+        <file>unit_dao/unit_dao6.png</file>
+        <file>unit_dao/unit_dao7.png</file>
+        <file>unit_dao/unit_dao8.png</file>
+        <file>unit_dao/unit_dao9.png</file>
+        <file>unit_dao/unit_dao10.png</file>
+        <file>unit_dao/unit_dao11.png</file>
+        <file>unit_dao/unit_dao12.png</file>
+        <file>unit_dao/unit_dao13.png</file>
+        <file alias="left">unit_dao/unit_dao14.png</file>
+    </qresource>
+    <qresource prefix="/luxdao">
+        <file>unit_luxdao/unit_luxdao1.png</file>
+        <file>unit_luxdao/unit_luxdao2.png</file>
+        <file alias="up">unit_luxdao/unit_luxdao3.png</file>
+        <file alias="down">unit_luxdao/unit_luxdao4.png</file>
+        <file alias="right">unit_luxdao/unit_luxdao5.png</file>
+        <file>unit_luxdao/unit_luxdao6.png</file>
+        <file>unit_luxdao/unit_luxdao7.png</file>
+        <file>unit_luxdao/unit_luxdao8.png</file>
+        <file>unit_luxdao/unit_luxdao9.png</file>
+        <file>unit_luxdao/unit_luxdao10.png</file>
+        <file>unit_luxdao/unit_luxdao11.png</file>
+        <file>unit_luxdao/unit_luxdao12.png</file>
+        <file>unit_luxdao/unit_luxdao13.png</file>
+        <file alias="left">unit_luxdao/unit_luxdao14.png</file>
+    </qresource>
+    <qresource prefix="/items">
+        <file alias="bomb">bomb.png</file>
+        <file alias="bombu">bombup.png</file>
+        <file alias="spd">speedup.png</file>
+        <file alias="mvbomb">movebomb.png</file>
+        <file alias="bombd">bomb_down.png</file>
+        <file alias="wavc">wave_center.png</file>
+        <file alias="wavh">wave_horizontal.png</file>
+        <file alias="wavv">wave_vertical.png</file>
+        <file alias="lvlup">item_62.png</file>
+    </qresource>
+    <qresource prefix="/marid">
+        <file>unit_marid/unit_marid1.png</file>
+        <file>unit_marid/unit_marid2.png</file>
+        <file alias="up">unit_marid/unit_marid3.png</file>
+        <file alias="down">unit_marid/unit_marid4.png</file>
+        <file alias="right">unit_marid/unit_marid5.png</file>
+        <file>unit_marid/unit_marid6.png</file>
+        <file>unit_marid/unit_marid7.png</file>
+        <file>unit_marid/unit_marid8.png</file>
+        <file>unit_marid/unit_marid9.png</file>
+        <file>unit_marid/unit_marid10.png</file>
+        <file>unit_marid/unit_marid11.png</file>
+        <file>unit_marid/unit_marid12.png</file>
+        <file>unit_marid/unit_marid13.png</file>
+        <file alias="left">unit_marid/unit_marid14.png</file>
+    </qresource>
+    <qresource prefix="/luxmarid">
+        <file>unit_luxmarid/unit_luxmarid1.png</file>
+        <file>unit_luxmarid/unit_luxmarid2.png</file>
+        <file alias="up">unit_luxmarid/unit_luxmarid3.png</file>
+        <file alias="down">unit_luxmarid/unit_luxmarid4.png</file>
+        <file alias="right">unit_luxmarid/unit_luxmarid5.png</file>
+        <file>unit_luxmarid/unit_luxmarid6.png</file>
+        <file>unit_luxmarid/unit_luxmarid7.png</file>
+        <file>unit_luxmarid/unit_luxmarid8.png</file>
+        <file>unit_luxmarid/unit_luxmarid9.png</file>
+        <file>unit_luxmarid/unit_luxmarid10.png</file>
+        <file>unit_luxmarid/unit_luxmarid11.png</file>
+        <file>unit_luxmarid/unit_luxmarid12.png</file>
+        <file>unit_luxmarid/unit_luxmarid13.png</file>
+        <file alias="left">unit_luxmarid/unit_luxmarid14.png</file>
     </qresource>
 </RCC>

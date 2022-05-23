@@ -9,14 +9,18 @@
 #include <QThread>
 #include <QGraphicsView>
 #include <QGraphicsScene>
-
+#include "graphicsview.h"
 #include "serverthread.h"
+
+#include "playerinfo.h"
+#include "userconfig.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 typedef QAction* lpQAction;
+typedef PlayerInfo* lpPlayerInfo;
 
 class MainWindow : public QMainWindow
 {
@@ -55,6 +59,10 @@ signals:
     void Document();
     void About();
 
+    void doGeneratePlayer(bool isAi, loca pos, QString name, int toDe);
+    void doPlayerBehavior(bool isPress, int playerNum, DirectionType direction);
+    void doReleaseBomb(int playerNum);
+
 protected:
 
     void closeEvent(QCloseEvent *event){
@@ -64,17 +72,20 @@ protected:
         return ;
     }
 
+    void keyPressEvent(QKeyEvent *event);
+    void keyReleaseEvent(QKeyEvent *event);
+
 private:
     Ui::MainWindow *ui;
     //A subclass responsible for sending JSON to server
-    class SendMessageManager;
-    friend class SendMessageManager;
-    SendMessageManager *smr;
+//    class SendMessageManager;
+//    friend class SendMessageManager;
+//    SendMessageManager *smr;
 
     //Actions
 //    lpQAction game, effect, cao, help;
 //    lpQAction savs, loas;
-    lpQAction save, load, quickSave, quickLoad, pause, restart, quit, exit;
+    lpQAction save, load, quickSave, quickLoad, pause, restart, quit, exit, start;
     lpQAction volumeup, volumedown, silence, configure, restartServer, advancedOptions;
     lpQAction document, about;
     lpQAction maptrans;
@@ -89,13 +100,18 @@ private:
 
     QPushButton *startButton;
 
-    QGraphicsView *overview;
-    QGraphicsScene *gameSpace;
+    GraphicsView *overview;
+    QGraphicsScene *gameSpace, *menuScene;
+
+    lpPlayerInfo player1, player2;
+    UserConfig userConfig;
 
     void coreRendering();
 
     void startGame();
+    void quitGame();
     void exitGame();
+    void restartGame();
     void suspendGame();
     void onServerChange(QString neuCaption);
     void onClientChange(QString neuCaption);
@@ -105,54 +121,61 @@ private:
     void opStartServer();
     void opCloseServer();
 
+    void playerDie(int num);
+
+    void getPlayerNum(int toDe, int num);
+
     void openMaptrans();
+    void openHelpDialog();
 
     void advance(QJsonObject now);
 };
 
-class MainWindow::SendMessageManager : public QObject
-{
-    Q_OBJECT
-private:
-    MainWindow* p;
-    //Game Actions
-    void sendSave(QString filename);
-    void sendLoad(QString filename);
-    void sendQuickSave();
-    void sendQuickLoad();
-    void sendRestart();
-    void sendQuit();
-    void sendExit();
 
-    //Effect Actions
-    void sendVolumeup();
-    void sendVolumedown();
-    void sendSilence();
 
-    //C&A Actions
-    void sendConfigure();
-    void sendRestartServer();
-    void sendAdvancedOptions();
+//class MainWindow::SendMessageManager : public QObject
+//{
+//    Q_OBJECT
+//private:
+//    MainWindow* p;
+//    //Game Actions
+//    void sendSave(QString filename);
+//    void sendLoad(QString filename);
+//    void sendQuickSave();
+//    void sendQuickLoad();
+//    void sendRestart();
+//    void sendQuit();
+//    void sendExit();
 
-    //Help Actions
-    void Document();
-    void About();
+//    //Effect Actions
+//    void sendVolumeup();
+//    void sendVolumedown();
+//    void sendSilence();
 
-public:
-    SendMessageManager(MainWindow *father)
-        : QObject(father)
-        , p(father)
-    {
-        connect(father, &MainWindow::doExit, this, &SendMessageManager::sendExit);
-//        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
-//        connect(father, &MainWindow::dot, this, &SendMessageMananger::sendExit);
-//        connect(father, &MainWindow::doQuit, this, &SendMessageMananger::sendQuit);
-//        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
+//    //C&A Actions
+//    void sendConfigure();
+//    void sendRestartServer();
+//    void sendAdvancedOptions();
 
-//        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
-//        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
-    }
+//    //Help Actions
+//    void Document();
+//    void About();
 
-};
+//public:
+//    SendMessageManager(MainWindow *father)
+//        : QObject(father)
+//        , p(father)
+//    {
+//        connect(father, &MainWindow::doExit, this, &SendMessageManager::sendExit);
+////        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
+////        connect(father, &MainWindow::dot, this, &SendMessageMananger::sendExit);
+////        connect(father, &MainWindow::doQuit, this, &SendMessageMananger::sendQuit);
+////        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
+
+////        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
+////        connect(father, &MainWindow::doExit, this, &SendMessageMananger::sendExit);
+//    }
+
+//};
 
 #endif // MAINWINDOW_H

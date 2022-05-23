@@ -24,10 +24,18 @@ set(PROJECT_SOURCES
         serverthread.h
         maptdialog.cpp
         maptdialog.h
+        playerinfo.cpp
+        graphicsview.h
+        graphicsview.cpp
+        playerinfo.h
+        userconfig.cpp
+        userconfig.h
 #        server/map.cpp
 #        server/map.h
         server/component.cpp
         server/component.h
+        gitems/graphicButtons.h
+        gitems/graphicButtons.cpp
         stage1/base.h
         stage1/color.h
 #        server/maingame.cpp
