@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -12,6 +11,7 @@
 #include <QGraphicsScene>
 #include "graphicsview.h"
 #include "serverthread.h"
+#include <QTextBrowser>
 
 #include "playerinfo.h"
 #include "userconfig.h"
@@ -92,7 +92,8 @@ private:
     lpQAction maptrans;
 
 
-    QLabel *cStatus, *sStatus;
+    QLabel *cStatus, *sStatus, *fps;
+    QTextBrowser *broad;
 
     int serverSign;
     LocalServer *server;
@@ -121,6 +122,10 @@ private:
     //should not be called by the user
     void opStartServer();
     void opCloseServer();
+    void opSave();
+    void opLoad();
+    void opEnd(int lastliver);
+    void opDocument();
 
     void playerDie(int num);
 
@@ -128,6 +133,7 @@ private:
 
     void openMaptrans();
     void openHelpDialog();
+    void resumefromLoad();
 
     void advance(QJsonObject now);
 };
@@ -180,31 +186,3 @@ private:
 //};
 
 #endif // MAINWINDOW_H
-=======
-#ifndef MAINWINDOW_H_
-#define MAINWINDOW_H_
-
-#include <gamescene.h>
-
-#include <QGraphicsView>
-#include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow {
-  Q_OBJECT
-
- public:
-  explicit MainWindow(QWidget *parent = nullptr);
-  ~MainWindow();
-
- private:
-  Ui::MainWindow *ui;
-  GameScene *gameScene;
-};
-#endif  // MAINWINDOW_H_
->>>>>>> a59510c9c5f02ca9b978141f3bec7cdf9b192ada

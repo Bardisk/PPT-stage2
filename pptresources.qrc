@@ -83,4 +83,11 @@
         <file>unit_luxmarid/unit_luxmarid13.png</file>
         <file alias="left">unit_luxmarid/unit_luxmarid14.png</file>
     </qresource>
+    <qresource prefix="/start menu">
+        <file>title.png</file>
+        <file>exit.png</file>
+        <file>quickload.png</file>
+        <file>startgame.png</file>
+        <file>help.png</file>
+    </qresource>
 </RCC>

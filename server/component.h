@@ -3,6 +3,7 @@
 
 #include <QtCore>
 
+class Ai;
 const int DEFAULTRTIMEB = 50;
 const int DEFAULTRTIMEW = 20;
 const int DEFAULTDAMAGE = 30;
@@ -42,6 +43,12 @@ struct loca
     loca operator - (const loca &b) const
     {
         return loca(x-b.x, y-b.y);
+    }
+    bool operator == (const loca &b) const{
+        return x==b.x && y==b.y;
+    }
+    bool operator != (const loca &b) const{
+        return !((*this) == b);
     }
     QVariantMap* toVariant() const
     {
@@ -126,7 +133,7 @@ public:
 };
 
 enum DirectionType{
-    UP=1, DW=3, LF=0, RT=4, NE=2
+    UP=1, DW=3, LF=0, RT=4, NE=2, BNB=5
 };
 
 class MoveableEntity : virtual public Entity
@@ -141,6 +148,8 @@ public:
     ~MoveableEntity();
     DirectionType direction() const;
     QVariantMap* toVariant() const;
+    void stop(GameMainMap *coreData);
+    bool isBlocked(GameMainMap *coreData);
     virtual void move(GameMainMap *coreData) = 0;
 
 };
@@ -163,6 +172,7 @@ public:
     bool canMoveBomb;
     int speedLevel;
     bool isPressed[5];
+    Ai *ai;
     DirectionType facing;
     Player(loca _pos, int _num, QString _name, bool _isAi=false, DirectionType _facing = DW, int _level=1, int _possessCount=1, int _score=0, bool _canMoveBomb=0, int _speedlevel=1);
     Player(const QVariantMap *from);
@@ -175,6 +185,7 @@ public:
     void releaseBomb(GameMainMap *coreData);
     void move(GameMainMap *coreData);
     void wear(GameMainMap *coreData);
+    void changeScore(int addS, GameMainMap *coreData);
     void eatItem(GameMainMap *coreData);
     QString intepretPath();
 };

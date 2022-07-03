@@ -3,6 +3,8 @@
 #include <QStatusBar>
 #include <QMessageBox>
 #include <QPushButton>
+#include <QFileDialog>
+#include <QGraphicsProxyWidget>
 
 #include "mainwindow.h"
 #include "maptdialog.h"
@@ -40,6 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
     quickSave->setShortcut(QKeySequence::Save);
     savs->addAction(quickSave);
     connect(quickSave, &QAction::triggered, this, &MainWindow::doQuickSave);
+    connect(save, &QAction::triggered, this, &MainWindow::opSave);
     savs->addAction(save);
 
     load = new QAction(tr("Load From"), this);
@@ -48,6 +51,9 @@ MainWindow::MainWindow(QWidget *parent)
     quickLoad->setShortcut(tr("Ctrl+L"));
     loas->addAction(quickLoad);
     connect(quickLoad, &QAction::triggered, this, &MainWindow::doQuickLoad);
+    connect(quickLoad, &QAction::triggered, this, &MainWindow::resumefromLoad);
+    connect(load, &QAction::triggered, this, &MainWindow::opLoad);
+    connect(load, &QAction::triggered, this, &MainWindow::resumefromLoad);
     loas->addAction(load);
 
     pause = new QAction(tr("Pause | Resume"), this);
@@ -76,33 +82,49 @@ MainWindow::MainWindow(QWidget *parent)
 
     QMenu *help = menuBar()->addMenu(tr("&Help"));
 
+    document = new QAction(tr("Document"));
+    document->setShortcut(tr("Ctrl+H"));
+    help->addAction(document);
+    connect(document, &QAction::triggered, this, &MainWindow::opDocument);
+
     //    QMenu *
 //    game = new QAction(tr("&Game"))
-
     gameSpace = new QGraphicsScene();
     menuScene = new QGraphicsScene();
 
     overview = new GraphicsView(this);
     overview->setScene(menuScene);
     overview->setBackgroundBrush(QBrush(QPixmap(tr(":/images/mapics/fbsea"))));
-    GraphicButtons *stbt = new GraphicButtons(QPoint(0,0), QPixmap(tr(":/buttons/stbt")));
+    GraphicButtons *stbt = new GraphicButtons(QPoint(325,200), QPixmap(tr(":/start menu/startgame.png")));
+    GraphicButtons *exbt = new GraphicButtons(QPoint(435,560), QPixmap(tr(":/start menu/exit.png")));
+    GraphicButtons *hlbt = new GraphicButtons(QPoint(425,440), QPixmap(tr(":/start menu/help.png")));
+    GraphicButtons *qlbt = new GraphicButtons(QPoint(320,320), QPixmap(tr(":/start menu/quickload.png")));
+    GraphicButtons *title = new GraphicButtons(QPoint(0,0), QPixmap(tr(":/start menu/title.png")));
     menuScene->addItem(stbt);
+    menuScene->addItem(exbt);
+    menuScene->addItem(hlbt);
+    menuScene->addItem(qlbt);
+    menuScene->addItem(title);
     connect(stbt, &GraphicButtons::clicked, this, &MainWindow::startGame);
+    connect(exbt, &GraphicButtons::clicked, this, &MainWindow::exitGame);
+    connect(qlbt, &GraphicButtons::clicked, this, &MainWindow::doQuickLoad);
+    connect(qlbt, &GraphicButtons::clicked, this, &MainWindow::resumefromLoad);
+    connect(hlbt, &GraphicButtons::clicked, this, &MainWindow::opDocument);
     setCentralWidget(overview);
 
 //    startButton = new QPushButton(tr("Start Game"), this);
 
 //    connect(startButton, &QPushButton::clicked, this, &MainWindow::startGame);
 
-
     statusBar();
     cStatus = new QLabel(tr("Client: Not connected"));
 //    cStatus->setMargin(1);
     sStatus = new QLabel(tr("Server: Not running"));
 //    sStatus->setMargin(1);
+    fps = new QLabel(tr("Fps: Unknown Yet"));
     statusBar()->addPermanentWidget(cStatus);
     statusBar()->addPermanentWidget(sStatus);
-
+    statusBar()->addPermanentWidget(fps);
 
     //start the server thread
     opStartServer();
@@ -113,15 +135,40 @@ MainWindow::MainWindow(QWidget *parent)
     qDebug() << "Done!";
 }
 
+void MainWindow::opDocument(){
+    QFile tmp("../PPT-stage2/help.txt");
+    if (!tmp.open(QFile::ReadOnly)){
+        QMessageBox tmpM;
+        tmpM.setText("Help File not Found!!!");
+        tmpM.exec();
+        return ;
+    }
+    QTextStream r(&tmp);
+    QString content = r.readAll();
+    QMessageBox *tmpR = new QMessageBox(this);
+    tmpR->setWindowTitle("Help");
+    tmpR->setText(content);
+    tmpR->show();
+    return ;
+}
+
 void MainWindow::startGame(){
 //    server->run();
     qDebug()<<"Received Game Start!";
 
     emit doGeneratePlayer(false, loca(1, 1), player1->name, 1);
-    emit doGeneratePlayer(false, loca(13, 15), player2->name, 2);
+    emit doGeneratePlayer(false, loca(13, 1), player2->name, 2);
     emit doGeneratePlayer(true, loca(1, 15), "AI1", 3);
-    emit doGeneratePlayer(true, loca(13, 1), "AI2", 4);
+    emit doGeneratePlayer(true, loca(13, 15), "AI2", 4);
     overview->setScene(gameSpace);
+}
+
+void MainWindow::resumefromLoad()
+{
+    overview->setScene(gameSpace);
+    player1->setnum(0);
+    player2->setnum(1);
+    return ;
 }
 
 void MainWindow::quitGame(){
@@ -157,13 +204,16 @@ void MainWindow::opStartServer(){
     connect(this, &MainWindow::doPlayerBehavior, server, &LocalServer::changePlayerBehavior);
     connect(this, &MainWindow::doGeneratePlayer, server, &LocalServer::generatePlayer);
     connect(this, &MainWindow::doReleaseBomb, server, &LocalServer::releaseBomb);
-
+    connect(this, &MainWindow::doSave, server, &LocalServer::save);
+    connect(this, &MainWindow::doLoad, server, &LocalServer::load);
 
     connect(server, &LocalServer::over, localServerWorker, &QThread::exit);
     connect(localServerWorker, &QThread::finished, localServerWorker, &QThread::deleteLater);
     connect(server, &LocalServer::changeServerStatus, this, &MainWindow::onServerChange);
     connect(server, &LocalServer::queryFinished, this, &MainWindow::advance);
     connect(server, &LocalServer::playerGenerationCompleted, this, &MainWindow::getPlayerNum);
+
+    connect(server, &LocalServer::gameEnd, this, &MainWindow::opEnd);
 
     localServerWorker->start();
     emit doStartServer();
@@ -218,6 +268,9 @@ void MainWindow::openHelpDialog(){
 
 void MainWindow::advance(QJsonObject now)
 {
+    static clock_t lasten;
+    static clock_t flashtimes=0;
+    static bool isfirst = true;
     clock_t st = clock();
     auto tmp = now.toVariantMap();
     GameMainMap v(&tmp);
@@ -360,8 +413,48 @@ void MainWindow::advance(QJsonObject now)
 //            }
         }
     }
+
+    QGraphicsProxyWidget *broadProxy = new QGraphicsProxyWidget();
+    gameSpace->addItem(broadProxy);
+    broadProxy->setWidget(broad = new QTextBrowser());
+    QString broadText("");
+    for (int i = 0; i < v.players.size(); i++){
+        if (!v.players[i].isVaild()){
+            broadText.append(QString("<h4>Player %1:</h4>\n").arg(i+1));
+            broadText.append(QString("Stat: Dead"));
+            continue;
+        }
+
+        auto nowp = v.plaMem(i);
+        auto tmpM = nowp->toMap();
+        auto tmpPla = Player(&tmpM);
+        broadText.append(QString("<h4>Player %1:</h4>\n").arg(i+1));
+        broadText.append(QString("<ul>BombRange: %1</ul>").arg(tmpPla.level));
+        broadText.append(QString("<ul>Score: %1</ul>").arg(tmpPla.score));
+        broadText.append(QString("<ul>Speed: %1</ul>").arg(tmpPla.speedLevel));
+        broadText.append(QString("<ul>PCount: %1</ul>").arg(tmpPla.possessCount));
+        broadText.append(tmpPla.canMoveBomb? QString("Stat: Powered") : QString("Stat: Non-powered"));
+    }
+    broadProxy->setPos(QPointF(900, 0));
+    broad->setText(broadText);
+    broadProxy->resize(200, 730);
     clock_t en = clock();
     qDebug()<<"Tick elapsed(Advance): "<<en-st<<" ms";
+
+    if(isfirst){
+        lasten = en;
+        isfirst = false;
+        return ;
+    }
+    ++flashtimes;
+    if(en - lasten > 1000){
+        if (lasten != en)
+            fps->setText(QString("Fps: %1").arg((flashtimes)*1000.0/(en-lasten)));
+        else
+            fps->setText("Error on fps");
+        lasten = en;
+        flashtimes = 0;
+    }
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
@@ -404,3 +497,28 @@ MainWindow::~MainWindow()
     delete menuScene;
 }
 
+void MainWindow::opSave()
+{
+    QString fn;
+    fn = QFileDialog::getSaveFileName(this, tr("Save As"), "", tr("Json Files (*.json)"));
+    if (fn.isNull())
+        return ;
+    emit doSave(fn);
+}
+void MainWindow::opLoad()
+{
+    QString fn;
+    fn = QFileDialog::getOpenFileName(this, tr("Load From"), "", tr("Json Files (*.json)"));
+    if (fn.isNull())
+        return ;
+    emit doLoad(fn);
+}
+void MainWindow::opEnd(int lastliver)
+{
+    QMessageBox Mow;
+    Mow.setText(~lastliver ? QString("Player %1 wins!").arg(lastliver+1) : QString("No one wins."));
+    Mow.setWindowTitle("GOOD GAME");
+    quitGame();
+    Mow.exec();
+    return ;
+}

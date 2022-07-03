@@ -7,6 +7,7 @@
 #include <QTimer>
 
 #include "server/component.h"
+#include "ai.h"
 
 const int TICK = 25;
 
@@ -24,6 +25,7 @@ private slots:
 
 private:
     QTimer *tickStimulator;
+    Ai* Ailist[10];
 
 public slots:
     void start();
@@ -46,6 +48,7 @@ signals:
     void changeServerStatus(QString caption);
     void playerGenerationCompleted(int toDe, int num=-1);
     void playerDie(int num);
+    void gameEnd(int lastliver);
 };
 
 

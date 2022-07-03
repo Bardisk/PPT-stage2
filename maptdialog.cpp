@@ -5,7 +5,6 @@
 #include <QFileDialog>
 #include <QLabel>
 #include <QRect>
-
 maptDialog::maptDialog(QWidget *parent)
     : QDialog(parent)
 {

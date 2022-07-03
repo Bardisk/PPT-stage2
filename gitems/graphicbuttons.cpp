@@ -1,5 +1,13 @@
 #include "graphicbuttons.h"
 
+GraphicButtons::GraphicButtons(const QPoint &_pos, const QPixmap &_pic, const QSize &_siz)
+    : QGraphicsObject()
+    , pos(_pos)
+    , pic(_pic)
+{
+    this->setAcceptedMouseButtons(Qt::LeftButton);
+    pic.scaled(_siz);
+}
 GraphicButtons::GraphicButtons(const QPoint &_pos, const QPixmap &_pic)
     : QGraphicsObject()
     , pos(_pos)
@@ -7,6 +15,7 @@ GraphicButtons::GraphicButtons(const QPoint &_pos, const QPixmap &_pic)
 {
     this->setAcceptedMouseButtons(Qt::LeftButton);
 }
+
 
 void GraphicButtons::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {

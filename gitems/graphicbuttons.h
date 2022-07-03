@@ -20,6 +20,7 @@ protected:
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
 public:
     GraphicButtons(const QPoint &_pos, const QPixmap &_pic);
+    GraphicButtons(const QPoint &_pos, const QPixmap &_pic, const QSize &_siz);
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     QRectF boundingRect() const;
 };

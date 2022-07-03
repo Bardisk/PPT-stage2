@@ -1,0 +1,15 @@
+<h4>Player 1</h4>
+<ul>W - go up</ul>
+<ul>A - go left</ul>
+<ul>S - go down</ul>
+<ul>D - go right</ul>
+<h4>Player 2</h4>
+<ul>↑ - go up</ul>
+<ul>← - go left</ul>
+<ul>↓ - go down</ul>
+<ul>→ - go right</ul>
+<h4>Common</h4>
+<ul>potion - increase the bomb range</ul>
+<ul>shoe - increase player speed</ul>
+<ul>colored bomb - give the player one more bomb to set</ul>
+<ul>glove - enable the player to move bomb</ul>

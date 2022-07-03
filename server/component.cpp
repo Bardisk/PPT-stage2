@@ -48,6 +48,7 @@ Player::Player(loca _pos, int _num, QString _name, bool _isAi, DirectionType _fa
     , isAi(_isAi)
     , canMoveBomb(_canMoveBomb)
     , speedLevel(_speedlevel)
+    , ai(nullptr)
     , facing(_facing)
 {
     for (int i = 0; i < 5; i++)
@@ -172,6 +173,7 @@ Player::Player(const QVariantMap *from)
     , isAi((*from)["isAi"].toBool())
     , canMoveBomb((*from)["canMoveBomb"].toBool())
     , speedLevel((*from)["speedLevel"].toInt())
+    , ai(nullptr)
     , facing((DirectionType) (*from)["facing"].toInt())
 {
     isPressed[DirectionType::UP] = (*from)["isPressedUp"].toBool();
@@ -498,9 +500,11 @@ void BombEntity::wear(GameMainMap *coreData)
     if(!(--remainTime)){
         die(coreData);
         setoff(coreData);
-        Player tmppla(coreData->gePlaMem(setterNum));
-        ++tmppla.possessCount;
-        tmppla.update(coreData);
+        if(!coreData->isDie(setterNum)){
+            Player tmppla(coreData->gePlaMem(setterNum));
+            ++tmppla.possessCount;
+            tmppla.update(coreData);
+        }
     }
     else{
         update(coreData);
@@ -602,21 +606,26 @@ void Player::eatItem(GameMainMap *coreData){
     }
     if (!toGet.pos.isVaild()) return ;
     toGet.die(coreData);
+
     switch (toGet.itemType) {
     case ItemType::LEVEL:
         level += toGet.value;
         level = qMin(MAXLEVEL, level);
+        score += 100;
         break;
     case ItemType::SPEED:
         speedLevel += toGet.value;
         speedLevel = qMin(MAXSPEED, speedLevel);
+        score += 100;
         break;
     case ItemType::RICHMENT:
         possessCount += toGet.value;
         possessCount = qMin(MAXPOSSESS, possessCount);
+        score += 100;
         break;
     case ItemType::STRENGHTH:
         canMoveBomb = true;
+        score += 100;
         break;
     }
     update(coreData);
@@ -844,4 +853,31 @@ updst:  stat += speed;
 
 bool GameMainMap::isDie(int playerNum){
     return !players[playerNum].isVaild();
+}
+
+void Player::changeScore(int addS, GameMainMap *coreData)
+{
+    score += addS;
+    update(coreData);
+}
+
+void MoveableEntity::stop(GameMainMap *coreData)
+{
+    coreData->mapMem(posTo).movingtoEntities.clear();
+    isMoving = false;
+    posTo = loca();
+    stat = speed = 0;
+    update(coreData);
+}
+
+bool MoveableEntity::isBlocked(GameMainMap *coreData)
+{
+    if (!isMoving) return false;
+    if(coreData->mapMem(posTo).findElement(HARDWALL)
+        || coreData->mapMem(posTo).findElement(SOFTWALL)
+        || coreData->mapMem(posTo).findElement(BOMB)
+        || coreData->mapMem(posTo).findElement(PLAYER)
+        || (!coreData->mapMem(posTo).movingtoEntities.empty() && !(coreData->mapMem(posTo).movingtoEntities[0] == pos)))
+        return true;
+    return false;
 }
