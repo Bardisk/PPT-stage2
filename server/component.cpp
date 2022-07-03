@@ -780,7 +780,7 @@ void Player::move(GameMainMap *coreData)
         findo(it, BOMB, nownode){
             if (!canMoveBomb) return ;
             BombEntity tmpB(it->toMap());
-            if(tmpB.isMoving){
+            if (tmpB.isMoving) {
                 if (tmpB.direction() != direction())
                     return ;
                 tmpB.speed = qMax(tmpB.speed, speed);
@@ -879,5 +879,18 @@ bool MoveableEntity::isBlocked(GameMainMap *coreData)
         || coreData->mapMem(posTo).findElement(PLAYER)
         || (!coreData->mapMem(posTo).movingtoEntities.empty() && !(coreData->mapMem(posTo).movingtoEntities[0] == pos)))
         return true;
+    return false;
+}
+
+bool GameMainMap::isSomeoneBomb(int playerNum)
+{
+    for (int i = 0; i < szN; i++)
+        for (int j = 0; j < szM; j++)
+        {
+            lpNodeMem it;
+            findo(it, BOMB, mapMem(i, j))
+                if (it->toMap()["setterNum"].toInt() == playerNum)
+                    return true;
+        }
     return false;
 }

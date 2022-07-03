@@ -36,7 +36,9 @@ void LocalServer::run()
                 Ailist[tmp.num] = new Ai(i);
             DirectionType tmpD = Ailist[tmp.num]->Decision(coreData);
             if (tmpD == NE) continue;
-            if (tmpD == BNB){
+            if (tmpD == BNB) {
+                if (coreData->isSomeoneBomb(i))
+                    continue;
                 releaseBomb(i);
                 continue;
             }
@@ -237,6 +239,5 @@ void LocalServer::releaseBomb(int playerNum){
 //    if (tmp.isMoving)
 //        return ;
     tmp.releaseBomb(coreData);
-
     qDebug() << "receive setBomb!" << playerNum;
 }

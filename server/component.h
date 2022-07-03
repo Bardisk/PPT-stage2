@@ -307,6 +307,7 @@ public:
     QList <QVariant>::Iterator plaMem(int playerNum);
     Player gePlaMem(int playerNum);
     bool isDie(int playerNum);
+    bool isSomeoneBomb(int playerNum);
 };
 
 #endif // COMPENONT_H
