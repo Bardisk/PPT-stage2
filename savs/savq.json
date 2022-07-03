@@ -279,42 +279,6 @@
             "mtEntities": [
             ],
             "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
                 {
                     "canMoveBomb": false,
                     "entityType": 6,
@@ -325,17 +289,17 @@
                     "isPressedLf": false,
                     "isPressedRt": false,
                     "isPressedUp": false,
-                    "level": 5,
-                    "num": 1,
-                    "posTox": 1,
-                    "posToy": 7,
-                    "possessCount": 3,
+                    "level": 1,
+                    "num": 0,
+                    "posTox": -1,
+                    "posToy": -1,
+                    "possessCount": 1,
                     "posx": 1,
-                    "posy": 7,
+                    "posy": 1,
                     "protectTime": 0,
-                    "score": 6500,
-                    "speed": 3000,
-                    "speedLevel": 3,
+                    "score": 0,
+                    "speed": 0,
+                    "speedLevel": 1,
                     "stat": 0,
                     "toughness": 20
                 }
@@ -351,12 +315,90 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 3,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 5,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 6,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 7,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 1,
+                    "posy": 10,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -483,6 +525,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 4,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -502,6 +551,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 6,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -527,30 +583,6 @@
             "mtEntities": [
             ],
             "rsEntities": [
-                {
-                    "canMoveBomb": false,
-                    "entityType": 6,
-                    "facing": 0,
-                    "isAi": false,
-                    "isMoving": false,
-                    "isPressedDw": false,
-                    "isPressedLf": false,
-                    "isPressedRt": false,
-                    "isPressedUp": false,
-                    "level": 1,
-                    "num": 0,
-                    "posTox": 2,
-                    "posToy": 9,
-                    "possessCount": 1,
-                    "posx": 2,
-                    "posy": 9,
-                    "protectTime": 0,
-                    "score": 0,
-                    "speed": 400,
-                    "speedLevel": 1,
-                    "stat": 0,
-                    "toughness": 20
-                }
             ]
         },
         {
@@ -576,18 +608,48 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 2,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 2
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 13,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 2,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -741,6 +803,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -773,6 +842,22 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 3,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 1
+                }
             ]
         },
         {
@@ -785,6 +870,22 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 3,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 3,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 1
+                }
             ]
         },
         {
@@ -804,6 +905,30 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "canMoveBomb": false,
+                    "entityType": 6,
+                    "facing": 0,
+                    "isAi": true,
+                    "isMoving": false,
+                    "isPressedDw": false,
+                    "isPressedLf": true,
+                    "isPressedRt": false,
+                    "isPressedUp": false,
+                    "level": 4,
+                    "num": 2,
+                    "posTox": 3,
+                    "posToy": 16,
+                    "possessCount": 1,
+                    "posx": 3,
+                    "posy": 16,
+                    "protectTime": 0,
+                    "score": 300,
+                    "speed": 2000,
+                    "speedLevel": 2,
+                    "stat": 0,
+                    "toughness": 20
+                }
             ]
         },
         {
@@ -977,6 +1102,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 4,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1124,6 +1256,22 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 6,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 5,
+                    "posy": 6,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 2
+                }
             ]
         },
         {
@@ -1201,12 +1349,26 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 13,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1239,6 +1401,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 5,
+                    "posy": 17,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1315,6 +1484,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 5,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1339,6 +1515,22 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 6,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 2
+                }
             ]
         },
         {
@@ -1371,6 +1563,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1415,6 +1614,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 6,
+                    "posy": 17,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1511,6 +1717,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 6,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1543,6 +1756,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1601,6 +1821,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 7,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1815,30 +2042,74 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 13,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 15,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 16,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 8,
+                    "posy": 16,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 2
+                }
             ]
         },
         {
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 8,
+                    "posy": 17,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -1969,6 +2240,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -2007,6 +2285,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 13,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -2045,6 +2330,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 9,
+                    "posy": 17,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -2176,6 +2468,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 8,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -2188,6 +2487,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 10,
+                    "posy": 10,
+                    "protectTime": 0,
+                    "toughness": 0
+                }
             ]
         },
         {
@@ -2207,6 +2513,13 @@
             "mtEntities": [
             ],
             "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 10,
+                    "posy": 12,
+                    "protectTime": 0,
+                    "toughness": 1061109567
+                }
             ]
         },
         {
@@ -2226,13 +2539,6 @@
             "mtEntities": [
             ],
             "rsEntities": [
-                {
-                    "entityType": 2,
-                    "posx": 10,
-                    "posy": 14,
-                    "protectTime": 0,
-                    "toughness": 0
-                }
             ]
         },
         {
@@ -2252,13 +2558,6 @@
             "mtEntities": [
             ],
             "rsEntities": [
-                {
-                    "entityType": 2,
-                    "posx": 10,
-                    "posy": 16,
-                    "protectTime": 0,
-                    "toughness": 0
-                }
             ]
         },
         {
@@ -2374,52 +2673,10 @@
             "mtEntities": [
             ],
             "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
                 {
                     "entityType": 2,
                     "posx": 11,
-                    "posy": 14,
+                    "posy": 7,
                     "protectTime": 0,
                     "toughness": 0
                 }
@@ -2436,14 +2693,100 @@
             ],
             "rsEntities": [
                 {
+                    "entityType": 2,
+                    "posx": 11,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
                     "entityType": 5,
                     "itemType": 1,
                     "posx": 11,
-                    "posy": 16,
+                    "posy": 9,
                     "protectTime": 0,
                     "toughness": 0,
                     "value": 1
                 }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 11,
+                    "posy": 10,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+                {
+                    "x": 11,
+                    "y": 14
+                }
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "canMoveBomb": false,
+                    "entityType": 6,
+                    "facing": 0,
+                    "isAi": true,
+                    "isMoving": true,
+                    "isPressedDw": false,
+                    "isPressedLf": true,
+                    "isPressedRt": false,
+                    "isPressedUp": false,
+                    "level": 4,
+                    "num": 3,
+                    "posTox": 11,
+                    "posToy": 13,
+                    "possessCount": 1,
+                    "posx": 11,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "score": 700,
+                    "speed": 400,
+                    "speedLevel": 2,
+                    "stat": 400,
+                    "toughness": 20
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
             ]
         },
         {
@@ -2713,122 +3056,6 @@
                     "posy": 0,
                     "protectTime": 0,
                     "toughness": 1061109567
-                }
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-                {
-                    "entityType": 1,
-                    "posx": 13,
-                    "posy": 9,
-                    "protectTime": 0,
-                    "toughness": 1061109567
-                }
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-                {
-                    "entityType": 5,
-                    "itemType": 1,
-                    "posx": 13,
-                    "posy": 11,
-                    "protectTime": 0,
-                    "toughness": 0,
-                    "value": 1
-                }
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-            ]
-        },
-        {
-            "mtEntities": [
-            ],
-            "rsEntities": [
-                {
-                    "entityType": 2,
-                    "posx": 13,
-                    "posy": 14,
-                    "protectTime": 0,
-                    "toughness": 0
-                },
-                {
-                    "entityType": 5,
-                    "itemType": 0,
-                    "posx": 13,
-                    "posy": 14,
-                    "protectTime": 0,
-                    "toughness": 0,
-                    "value": 1
                 }
             ]
         },
@@ -2840,19 +3067,19 @@
                     "canMoveBomb": false,
                     "entityType": 6,
                     "facing": 3,
-                    "isAi": true,
+                    "isAi": false,
                     "isMoving": false,
                     "isPressedDw": false,
                     "isPressedLf": false,
                     "isPressedRt": false,
                     "isPressedUp": false,
                     "level": 1,
-                    "num": 3,
+                    "num": 1,
                     "posTox": -1,
                     "posToy": -1,
                     "possessCount": 1,
                     "posx": 13,
-                    "posy": 15,
+                    "posy": 1,
                     "protectTime": 0,
                     "score": 0,
                     "speed": 0,
@@ -2860,6 +3087,122 @@
                     "stat": 0,
                     "toughness": 20
                 }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 1,
+                    "posx": 13,
+                    "posy": 9,
+                    "protectTime": 0,
+                    "toughness": 1061109567
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 5,
+                    "itemType": 1,
+                    "posx": 13,
+                    "posy": 11,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
+                {
+                    "entityType": 2,
+                    "posx": 13,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0
+                },
+                {
+                    "entityType": 5,
+                    "itemType": 0,
+                    "posx": 13,
+                    "posy": 14,
+                    "protectTime": 0,
+                    "toughness": 0,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "mtEntities": [
+            ],
+            "rsEntities": [
             ]
         },
         {
@@ -3156,20 +3499,20 @@
     ],
     "plaDt": [
         {
-            "x": 2,
-            "y": 9
-        },
-        {
             "x": 1,
-            "y": 7
-        },
-        {
-            "x": -1,
-            "y": -1
+            "y": 1
         },
         {
             "x": 13,
-            "y": 15
+            "y": 1
+        },
+        {
+            "x": 3,
+            "y": 16
+        },
+        {
+            "x": 11,
+            "y": 14
         }
     ]
 }
